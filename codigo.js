@@ -31,13 +31,34 @@ linea = "mi nombre es 'nombre' y soy genial"
 document.getElementById("nombre").textContent = nombre
 
 //operadores intermedio 
-// operdarores de compaaracion
+// operdarores de comparacion
 let comparacion1 = 23;
 let comparacion2 = 20;
 //sale false ya que no son iguales
 document.getElementById("Ocomparacion").textContent = (comparacion1 == comparacion2)
 //sale true ya que 23 es mayor que 20 resumen no es igual
 document.getElementById("Ocomparacion2").textContent = (comparacion1 != comparacion2)
+
+//operadores de comparacion && y ||
+let andcomparacion1 = 2
+let andcomparacion2 = 4
+//sale false si lasdos no son true 
+document.getElementById("&&comparacion").textContent = (andcomparacion1 != andcomparacion2) && (andcomparacion1 < andcomparacion2)
+document.getElementById("||comparacion").textContent = (andcomparacion1 == andcomparacion2) || (andcomparacion1 < andcomparacion2)
+
+//ejercicio con valor !
+{{
+num1 = 12;
+num2 = 24;
+num3 = 25;
+num4 = 92;
+num5 = 91;
+}
+op = (num5 > num2 && num4 < num3) || (!(num1 === num2) || num3 != num3)
+
+document.getElementById("pruebacomparacion").textContent = op
+}
+
 
 
 
