@@ -30,8 +30,14 @@ linea = "mi nombre es 'nombre' y soy genial"
 
 document.getElementById("nombre").textContent = nombre
 
-//
-
+//operadores intermedio 
+// operdarores de compaaracion
+let comparacion1 = 23;
+let comparacion2 = 20;
+//sale false ya que no son iguales
+document.getElementById("Ocomparacion").textContent = (comparacion1 == comparacion2)
+//sale true ya que 23 es mayor que 20 resumen no es igual
+document.getElementById("Ocomparacion2").textContent = (comparacion1 != comparacion2)
 
 
 

@@ -69,5 +69,22 @@ Operadores en JavaScript
 /  // división  x / y
 %  // módulo (resto) x % y
 
+Operadores (intermedio)
+-Operadores de Comparacion 
+Operador	      Significado
+ ==	          //     Igual a
+ !=	          // Diferente de
+ >	         // Mayor que
+ <	         //Menor que
+ >=	       //Mayor o igual que
+ <=	      //Menor o igual que
+ ===	    //Igual estricto (valor y tipo) (JS)
+ !==	    //Diferente estricto (JS)
 
+-Operadores Logicos
 
+&& → sAND (Y)
+
+|| → OR (O)
+
+! → NOT (NO)
