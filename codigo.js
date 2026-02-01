@@ -59,6 +59,8 @@ op = (num5 > num2 && num4 < num3) || (!(num1 === num2) || num3 != num3)
 document.getElementById("pruebacomparacion").textContent = op
 }
 
+//camel case primera minuscula la segunda con mayuscula
+parseInt()
 
 
 
