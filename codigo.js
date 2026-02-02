@@ -63,6 +63,19 @@ document.getElementById("pruebacomparacion").textContent = op
 parseInt()
 
 
+//Condicoinales  
+
+nombre = 18
+
+if (nombre > 2){
+    document.getElementById("nombreif").textContent = "sirve"
+} else if (nombre === 18){
+    document.getElementById("nombreif").textContent = "error"
+} else {
+    document.getElementById("nombreelse").textContent = "intenta que sirva"
+}
+
+
 
 
 
