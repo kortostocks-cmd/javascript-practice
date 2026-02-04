@@ -19,11 +19,11 @@ let procesador = pc1["procesador"]
 let ram = pc1["ram"]
 let espacio = pc1["espacio"]
 
-document.getElementById("ArraysASO").textContent = 
-    `el nombre de mi PC es: ${nombre} 
-    el nombre de mi PC es: ${procesador} 
-    el nombre de mi PC es: ${ram} 
-    el nombre de mi PC es: ${espacio} `;
+contenedorArray = document.getElementById("ArraysASO")
+    contenedorArray.innerHTML +=`el nombre de mi PC es: ${nombre}<br>
+    mi procesador es: ${procesador} <br>
+    el nombre de mi RAm es: ${ram} <br>
+    tengo de espacio : ${espacio} para usar`;
 
 
     let numero = 0;
@@ -110,3 +110,5 @@ for (let array in array2){
         contenedor3.innerHTML += (array2[array] + "<br>")
     }
 }
+
+//14) Funciones
