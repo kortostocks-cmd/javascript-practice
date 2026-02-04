@@ -70,3 +70,24 @@ for (let i = 6; i >= 0; i--){
     }
     contenedor.innerHTML +=  i + "<br>"
 }
+
+const contenedor2 = document.getElementById("forin")
+let animales = ["gato", "perro", "rex"]
+
+for (animal in animales){//igual ala posicion osea numero 0 1 2
+    contenedor2.innerHTML += (animales[animal] + "<br>")
+} 
+
+//espacio
+contenedor2.innerHTML += "<br>";
+
+for (animal in animales){//igual ala posicion osea numero 0 1 2
+    contenedor2.innerHTML += animal + " " + animales[animal] + "<br>"
+} 
+
+contenedor2.innerHTML += "<br>";
+
+
+for (animal of animales){//mostrar el elmento de animales
+    contenedor2.innerHTML += animal + "<br>";
+}
