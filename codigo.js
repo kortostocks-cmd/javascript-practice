@@ -91,3 +91,22 @@ contenedor2.innerHTML += "<br>";
 for (animal of animales){//mostrar el elmento de animales
     contenedor2.innerHTML += animal + "<br>";
 }
+
+//LABLE: una setencia de asociar un bucle a un nombre "bucle" = korto que es una Array
+array1 = ["maria1", "josefa1","robert1"];
+array2 = ["aka2", "marcelo2", array1, "josefina2"];
+
+const contenedor3 = document.getElementById("label")
+
+forRancio://label
+for (let array in array2){
+    if (array == 2){
+        for (let array of array1){
+            //contiue forRancio salta el array1
+            contenedor3.innerHTML += array + "<br>";
+            break forRancio;//con break solo se puede ver josefina y no el array que esta en e lbloque este y no el otro
+        }
+    } else {
+        contenedor3.innerHTML += (array2[array] + "<br>")
+    }
+}
