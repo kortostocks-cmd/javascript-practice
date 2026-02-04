@@ -48,3 +48,25 @@ while (numero1 < 1000) {
     }
 }
 
+//FOR
+//for es un while pero es un bucle determinado, se ejecutat las veces que indiquemos no como while que lo ejecuta siempre que es true
+//sirve porque es una variable solo para ese bloque:)
+
+
+const contenedor = document.getElementById("for")
+
+for (let i = 0; i <= 6; i++) {
+    if (i == 5){
+        break;
+    }
+    contenedor.innerHTML += i + "<br>";
+}
+//espacio entre los dos
+contenedor.innerHTML += "<br>"
+
+for (let i = 6; i >= 0; i--){
+    if (i == 5){
+        continue;//lo salta en ves de bloquiar el bucle
+    }
+    contenedor.innerHTML +=  i + "<br>"
+}
