@@ -150,3 +150,46 @@ const prohom = {
 
 
 prohom.saludar("pedro", 200);
+
+
+
+
+
+
+
+//Cofla 2 
+//problema 1 de 3
+//let free = false;
+
+// const validarCliente = (time) => {
+
+// const edad = Number(prompt("¿Cuál es tu edad?"));
+
+// if (isNaN(edad)) {
+//     alert("Edad inválida");
+//     return;
+// }
+
+// if (edad < 18) {
+//     alert("No cumples la edad mínima");
+//     return;
+// }
+
+// if (time >= 2 && time < 7 && !free) {
+//     alert("Entras gratis por promoción nocturna");
+//     free = true;
+//     return;
+// }
+
+// alert(`Debes pagar — son las ${time}:00`);
+// };
+
+// validarCliente(23);
+// validarCliente(8);
+// validarCliente(24);
+// validarCliente(3);
+// validarCliente(6);
+// validarCliente(7);
+
+
+//caso 2
