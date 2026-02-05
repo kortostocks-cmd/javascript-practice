@@ -1,0 +1,14 @@
+
+  .item {
+    margin-bottom: 12px;
+  }
+
+  .mini {
+    display: block;
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+

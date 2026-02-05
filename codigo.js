@@ -135,3 +135,18 @@ function calcular(num1, num2) {//Aqui comienza
 calcular(12, 32);
 calcular(40, 23);
 
+
+// 1. Creamos el objeto 'prohom'
+const prohom = {
+    saludar: (nombre, IQ)=> {
+        let frase = `!hola <b>${nombre}</b> eres un paquete<br>
+                    no te olvides de tu IQ <b>${IQ}</b><br>
+                    <hr>`;
+        
+        // Usamos innerHTML para que las etiquetas <br> y <hr> funcionen
+        document.getElementById("funcion2").innerHTML = frase;
+    }
+};
+
+
+prohom.saludar("pedro", 200);
