@@ -192,4 +192,50 @@ prohom.saludar("pedro", 200);
 // validarCliente(7);
 
 
-//caso 2
+//caso 2 de 3
+// let cantidad = Number(prompt("¿Cuántos alumnos hay?"));
+// let alumnos = [];
+
+// // crear alumnos
+// for (let i = 0; i < cantidad; i++) {
+// let nombre = prompt("Nombre del alumno " + (i + 1));
+// alumnos.push([nombre, 0]);
+// }
+
+// // tomar asistencia (30 días)
+// for (let dia = 0; dia < 30; dia++) {//30 veces dia a cada alumno
+
+// for (let i = 0; i < alumnos.length; i++) {// <---
+
+//     let presencia = prompt(`${alumnos[i][0]} (p = presente)`);//esto le va a pasar ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+//     if (presencia === "p" || presencia === "P") {
+//         alumnos[i][1]++;//suma una presencia 
+//     }
+
+// }
+// }
+
+// // mostrar resultados
+// let salida = "";
+
+// for (let i = 0; i < alumnos.length; i++) {
+
+// let nombre = alumnos[i][0];
+// let presentes = alumnos[i][1];
+// let ausencias = 30 - presentes;
+
+// salida += `
+// ${nombre}<br>
+// Presentes: ${presentes}<br>
+// Ausencias: ${ausencias}<br>
+// `;
+
+// if (ausencias > 18) {
+//     salida += "<b style='color:red'>Reprobado</b><br>";
+// }
+
+// salida += "<br>";
+// }
+
+// document.getElementById("cofla2").innerHTML = salida;
