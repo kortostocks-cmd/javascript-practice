@@ -111,4 +111,27 @@ for (let array in array2){
     }
 }
 
-//14) Funciones
+//14) Funciones llamar codigo con un Array osea crea una funtion y lo asocias
+//parametros
+
+// 1. No sobrescribas la palabra reservada 'document'
+// 2. Selecciona el elemento, no su contenido inicial
+const contenedor4 = document.getElementById("param");
+
+function calcular(num1, num2) {//Aqui comienza
+    let suma = num1 + num2;
+    let resta = num1 - num2;
+
+    contenedor4.innerHTML += `
+        <p>
+            <b>Números: ${num1} y ${num2}</b><br>
+            Suma: ${suma}<br>
+            Resta: ${resta}
+        </p>
+        <hr>
+    `;
+}
+
+calcular(12, 32);
+calcular(40, 23);
+
