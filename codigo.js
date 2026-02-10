@@ -157,39 +157,24 @@ prohom.saludar("pedro", 200);
 
 
 
-//Cofla 2 
-//problema 1 de 3
-//let free = false;
-
+// //Cofla 2 
+// let free = false;
 // const validarCliente = (time) => {
+//     let edad = prompt("Cual es tu edad?") 
+//         if (edad > 18) {
+//             if (time >= 2 && time < 7 && free == false) {
+//             alert("poder pasar gratis crack")
+//             free = true
+//             } else {
+//                 alert("Podes pasar pero paga 20 euritos")
+//             }
+//        } else {
+//        alert("mira bro tenes 18 vete bro bro")
+//    } 
+//}
 
-// const edad = Number(prompt("¿Cuál es tu edad?"));
-
-// if (isNaN(edad)) {
-//     alert("Edad inválida");
-//     return;
-// }
-
-// if (edad < 18) {
-//     alert("No cumples la edad mínima");
-//     return;
-// }
-
-// if (time >= 2 && time < 7 && !free) {
-//     alert("Entras gratis por promoción nocturna");
-//     free = true;
-//     return;
-// }
-
-// alert(`Debes pagar — son las ${time}:00`);
-// };
-
-// validarCliente(23);
-// validarCliente(8);
-// validarCliente(24);
-// validarCliente(3);
-// validarCliente(6);
-// validarCliente(7);
+// validarCliente(2)
+// validarCliente(10)
 
 
 //caso 2 de 3
@@ -239,3 +224,51 @@ prohom.saludar("pedro", 200);
 // }
 
 // document.getElementById("cofla2").innerHTML = salida;
+
+
+// caso 3 de 3
+const sumar = (num1,num2) => {
+    return parseInt(num1) + parseInt(num2);
+}
+const restar = (num1,num2) => {
+    return parseInt(num1) - parseInt(num2);
+}
+const dividir = (num1,num2) => {
+    return parseInt(num1) / parseInt(num2);
+}
+const multiplicacion = (num1,num2) => {
+    return parseInt(num1) * parseInt(num2);
+}
+
+alert("que operacion deseas realizar")
+let operacion = prompt("1: suma, 2:resta, 3:division, 4;multiplicacion");
+
+if (operacion == 1) {
+    let numero1 = prompt("primer numero para sumar");
+    let numero2 = prompt("segundo numero para sumar");
+    resultado = suma(numero1,numero2);
+    alert(`tu resultado es ${resultado}`);
+}
+else if (operacion == 2) {
+    let numero1 = prompt("primer numero para restar");
+    let numero2 = prompt("segundo numero para restar");
+    resultado = resta(numero1,numero2);
+    alert(`tu resultado es ${resultado}`);
+
+}
+else if (operacion == 3) {
+    let numero1 = prompt("primer numero para dividir");
+    let numero2 = prompt("segundo numero para dividir");
+    resultado = dividir(numero1,numero2);
+    alert(`tu resultado es ${resultado}`);
+
+}
+else if (operacion == 4) {
+    let numero1 = prompt("primer numero para multiplica");
+    let numero2 = prompt("segundo numero para multiplicar");
+    resultado = multiplicacion(numero1,numero2);
+    alert(`tu resultado es ${resultado}`);
+}
+else {
+    alert("no se ha encontrado la operacion")
+}
