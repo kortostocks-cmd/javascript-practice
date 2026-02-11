@@ -7,21 +7,31 @@ class Animal {
     }
 }
 
-let perro = new Animal("perro", 3, "rojo");
+class Perro extends Animal {
+    constructor(especie, edad, color, raza){
+        super(especie, edad, color);
+        this.raza = raza;
+    
+    this.informacion = `Soy un ${this.especie}, tengo ${this.edad} años, soy de color ${this.color} y mi raza es ${this.raza}`;
+    }
+    ladrar(){
+        alert("gua guau")
+    }
+}
+
+let perro = new Perro("perro", 3, "rojo", "doberman");
 let gato = new Animal("gato", 5, "negro");
 let pajaro = new Animal("pajaro", 4, "negro");
 
-// 1. CREAR EL ARRAY (Esto te faltaba)
 let listaAnimales = [perro, gato, pajaro];
 
-// 2. CAPTURAR EL ELEMENTO (Sin .textContent al final)
 let contenedor = document.getElementById("Objeto");
 
-// 3. LIMPIAR E INSERTAR
-if (contenedor) {
-    contenedor.innerHTML = ""; // Limpiamos lo que haya
-    listaAnimales.forEach(animal => {
-        // Usamos += para que se sumen uno tras otro
-        contenedor.innerHTML += `<p>${animal.informacion}</p>`;
-    });
-}
+contenedor.innerHTML = ""; 
+
+listaAnimales.forEach(animal => {
+    contenedor.innerHTML += `<p>${animal.informacion}</p>`;
+});
+
+perro.ladrar();
+gato.ladrar();//sale que no es funcion ya es una herencia a perro y no a gato
