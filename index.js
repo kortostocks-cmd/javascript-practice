@@ -48,7 +48,7 @@ class Gato extends Animal {
 
 
 let perro = new Perro("perro", 3, "rojo", "doberman");
-let gato = new Gato("gato", 5, "negro",4);
+let gato = new Gato("gato", 5, "negro");
 let pajaro = new Animal("pajaro", 4, "negro");
 
 let listaAnimales = [perro, gato, pajaro];
