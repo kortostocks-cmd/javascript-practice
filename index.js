@@ -96,30 +96,24 @@ class Celular {
     }
 }
 
-class CelularAltaGama {
+class CelularAltaGama extends Celular {
     constructor(nombre,color,tamaño,peso,rdp,rdc,ram,rdce){
-        super(nombre,color,tamaño,peso,rdp,rdc,ram)
+        super(nombre,color,tamaño,peso,rdp,rdc,ram);
         this.resolucionDeCamaraExtra = rdce;
-    }
-    grabarVideoLento(){
-        alert("estas grabando en camara lenta");
-    }
-    reconocimientoFacial(){
-        alert("vamos a iniciar un reconocimiento facial")
     }
 }
 
-// Creamos un array de celulares
-const celulares = [
-    new Celular("iPhone","rojo","grande","150g","5'","Full HD","3GB"),
-    new Celular("Samsung","azul","pequeño","145g","5.4'","1920x720","2GB"),
-    new Celular("Xiaomi","negro","mediano","130g","5.9'","1820 HD","4GB")
+const celularescaros = [
+    new CelularAltaGama("iPhone Pro","rojo","grande","130g","6.2","4K","6GB","108MP"),
+    new CelularAltaGama("Samsung Ultra","azul","mediano","135g","6.1","3K","8GB","200MP")
 ];
-
-const contenedor = document.getElementById("cualidades");
-
-// Recorremos el array
-celulares.forEach(celular => {
+contenedor = document.getElementById("cualidades")
+celularescaros.forEach(celular => {
     contenedor.innerHTML += celular.mobileInfo();
 });
+
+
+
+
+
 
