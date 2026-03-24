@@ -62,5 +62,68 @@ function calcularPotencia(numero, potencia) {
     return Math.pow(numero, potencia);
 }
 //otro jemplo con num ** exp
+function calcularPotencia2(num,exp){
+    return num ** exp;
+}
 
+//funciones de raiz cuadrada y cubica
+function calcularRaizCuadrada(numero) {
+    return Math.sqrt(numero);
+}
+//cubica
+function calcularRaizCubica(numero) {
+    return Math.cbrt(numero);
+}
+
+
+const obtenerInformacion = (materia) => {
+    const materias = {
+        fisica: ["Prof Perez", "pedro", "pepito", "paco", "perez"],
+        programacion: ["Prof Dalto", "pedro", "pepito", "paco"],
+        logica: ["Prof Hernandez", "pedro", "pepito", "paco"],
+        quimica: ["Prof Rodriguez", "pedro", "pepito", "paco"]
+    };
+
+    if (materias[materia] !== undefined) {
+        return [materias[materia], materia,materias];
+    } else {
+        return "la materia no existe";
+    }
+};
+
+const mostrarInformacion = (materia) => {
+    let informacion = obtenerInformacion(materia);
+
+    if (informacion !== "la materia no existe") {
+
+        let datos = informacion[0];
+
+        let profesor = datos[0];
+        let alumnos = datos.slice(1); // 👈 NO destruye el array
+
+        document.getElementById("cofla").innerHTML += `
+        El profesor de <b>${informacion[1]}</b> es: 
+        <b style="color:red;">${profesor}</b><br>
+        Alumnos: <b style="color:blue;">${alumnos.join(", ")}</b>
+        <br><br>`;
+    } else {
+        document.getElementById("cofla").innerHTML += `
+        <b style="color:red;">${materia} no existe</b><br><br>`;
+    }
+};
+
+const cantidadDeClases = (alumno) => {
+    let cantidadTotal = 0;
+    for (info in datos[2]) {
+        if (datos[2][info].includes(alumno)) {
+            cantidadTotal++;
+        }
+    }
+}
+mostrarInformacion("fisica");
+mostrarInformacion("programacion");
+mostrarInformacion("logica");
+mostrarInformacion("quimica");
+mostrarInformacion("biologia");
+cantidadDeClases("pedro");
 
